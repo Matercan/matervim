@@ -1,7 +1,7 @@
 return {
-{
-  -- Debug Framework
-  "mfussenegger/nvim-dap",
+  {
+    -- Debug Framework
+    "mfussenegger/nvim-dap",
     dependencies = {
       "rcarriga/nvim-dap-ui",
     },

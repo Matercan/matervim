@@ -11,14 +11,6 @@ return {
     config = function()
       require('mini.pairs').setup({
         modes = { insert = true, command = false, terminal = false },
-
-        -- Global mappings. Each right hand side should be a pair information, a
-        -- table with at least these fields (see more in |MiniPairs.map|):
-        -- - <action> - one of 'open', 'close', 'closeopen'.
-        -- - <pair> - two character string for pair to be used.
-        -- By default pair is not inserted after `\`, quotes are not recognized by
-        -- <CR>, `'` does not insert pair after a letter.
-        -- Only parts of tables can be tweaked (others will use these defaults).
         mappings = {
           ['('] = { action = 'open', pair = '()', neigh_pattern = '[^\\].' },
           ['['] = { action = 'open', pair = '[]', neigh_pattern = '[^\\].' },
@@ -50,5 +42,17 @@ return {
   },
   {
     "rachartier/tiny-glimmer.nvim"
-  }
+  },
+  {
+    '2kabhishek/nerdy.nvim',
+    dependencies = {
+      'folke/snacks.nvim',
+    },
+    cmd = 'Nerdy',
+    opts = {
+      max_recents = 30,               -- Configure recent icons limit
+      add_default_keybindings = true, -- Add default keybindings
+      copy_to_clipboard = false,      -- Copy glyph to clipboard instead of inserting
+    }
+  },
 }

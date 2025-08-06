@@ -7,17 +7,17 @@ dapui.setup({
     {
       elements = {
         -- Elements for the first layout
-        { id = "scopes", size = 0.25 },
+        { id = "scopes",      size = 0.25 },
         { id = "breakpoints", size = 0.25 },
-        { id = "stacks", size = 0.25 },
-        { id = "watches", size = 0.25 },
+        { id = "stacks",      size = 0.25 },
+        { id = "watches",     size = 0.25 },
       },
       size = 40, -- Can be 'max' or a fixed number
       position = "right",
     },
     {
       elements = {
-        { id = "repl", size = 0.5 },
+        { id = "repl",    size = 0.5 },
         { id = "console", size = 0.5 },
       },
       size = 0.25, -- Can be 'max' or a fixed number
@@ -41,7 +41,7 @@ dapui.setup({
   },
   render = {
     max_value_length = nil, -- Optional max length for variable values
-    max_table_rows = nil, -- Optional max number of rows for tables
+    max_table_rows = nil,   -- Optional max number of rows for tables
   },
 })
 

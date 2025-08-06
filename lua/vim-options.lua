@@ -9,6 +9,7 @@ vim.opt.smartindent = true
 vim.opt.filetype.indent = true
 vim.opt.number = true
 vim.opt.relativenumber = true
+vim.opt.wrap = false
 vim.g.mapleader = ' ' -- You can use ' ' for space or ',' for comma as your leader key
 vim.opt.clipboard = "unnamedplus"
 vim.opt.foldlevelstart = 99
@@ -18,4 +19,3 @@ vim.opt.shell = "/usr/bin/fish" -- Ensure this points to your fish executable
 vim.opt.shellcmdflag = "-c"     -- This is the default for most shells like fish, bash, zsh
 vim.opt.termguicolors = true
 vim.opt.encoding = "utf-8"
-

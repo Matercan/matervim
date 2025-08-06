@@ -3,7 +3,8 @@ return {
     "mason-org/mason.nvim",
     opts = {
       ensure_installed = {
-        "netcoredbg"
+        "netcoredbg",
+        "cpptools"
       }
     },
     config = function()
