@@ -16,8 +16,7 @@ return {
           "mellifluous", "miasma",
           "moonlight", "citruszest",
           "aurora", "nightfox",
-          "onedark", "papercolor", -- Doesn't work, ignore it
-          "github-nvim-theme"
+          "onedark", "materscheme"
         },
 
         livePreview = true,
@@ -146,8 +145,7 @@ return {
     priority = 999,
     config = function()
       require("configs.themes.nightfox")
-      -- If 'nightfox' is in 'themery's loaders, REMOVE this:
-      -- vim.cmd("colorscheme nightfox")
+      vim.cmd("colorscheme carbonfox")
     end
   },
   {
@@ -160,21 +158,11 @@ return {
     end
   },
   {
-    "NLKNguyen/papercolor-theme",
+    'Matercan/materscheme.nvim',
     lazy = false,
-    priority = 999,
+    priority = 100,
     config = function()
-      vim.cmd("colorscheme") -- The actual colorscheme name is typically 'papercolor'
+      vim.cmd("colorscheme materscheme")
     end,
-  },
-  {
-    'projekt0n/github-nvim-theme',
-    config = function()
-      require('github-theme').setup({
-
-      })
-
-      vim.cmd('colorscheme github_dark')
-    end
   }
 }

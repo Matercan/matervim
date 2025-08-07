@@ -37,6 +37,6 @@ require("lazy").setup(plugins)
 
 
 -- Global options after plugins are loaded (e.g., configurations that might depend on plugins)
--- Ensure treesitter is configured after it's loaded by Lazy
 
 require("configs.options")
+vim.cmd("colorscheme materscheme") -- Load my favourite colorscheme as priority
