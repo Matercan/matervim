@@ -158,7 +158,7 @@ return {
     end
   },
   {
-    dir = '~/projects/materscheme.nvim',
+    dir = 'Matercan/materscheme.nvim',
     lazy = false,
     priority = 100,
     config = function()
