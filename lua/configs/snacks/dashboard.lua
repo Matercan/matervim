@@ -76,19 +76,12 @@ return {
       { icon = " ", key = "q", desc = "Quit", action = ":qa" },
     },
     header = [[
-
-
-
-
   __  __       _                  _          ؜
  |  \/  |     | |                (_)         ؜
  | \  / | __ _| |_ ___ _ ____   ___ _ __ ___ ͏؜
  | |\/| |/ _` | __/ _ \ '__\ \ / / | '_ ` _ \_
  | |  | | (_| | ||  __/ |   \ V /| | | | | | |
  |_|  |_|\__,_|\__\___|_|    \_/ |_|_| |_| |_|
-
-
-
 
 
  ]],
@@ -125,8 +118,7 @@ return {
       pane = 2,
       section = "terminal",
       cmd =
-      "fastfetch",
-      padding = 1,
+      "colorscript -e square",
     },
     { pane = 2, icon = " ", title = "Recent Files", section = "recent_files", indent = 2, padding = 1 },
     { pane = 2, icon = " ", title = "Projects", section = "projects", indent = 2, padding = 1 },
