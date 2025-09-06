@@ -55,4 +55,12 @@ return {
       copy_to_clipboard = false,      -- Copy glyph to clipboard instead of inserting
     }
   },
+  {
+    "sphamba/smear-cursor.nvim",
+    opts = {
+    },
+  },
+  {
+    'nanotee/zoxide.vim'
+  }
 }

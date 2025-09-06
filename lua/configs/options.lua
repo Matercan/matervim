@@ -69,3 +69,13 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt_local.shiftwidth = 4
   end
 })
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "qml", -- Apply these settings only for Py files
+  callback = function()
+    vim.opt_local.foldenable = true
+    vim.opt_local.foldmethod = "indent"
+    vim.opt_local.foldlevel = 99
+    vim.opt_local.shiftwidth = 4
+  end
+})

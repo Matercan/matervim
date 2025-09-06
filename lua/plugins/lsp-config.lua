@@ -29,6 +29,7 @@ return {
           "postgres_lsp",
           "omnisharp",
           "clangd",
+          "qmlls",
         }
       })
     end

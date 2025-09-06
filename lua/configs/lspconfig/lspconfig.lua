@@ -69,7 +69,12 @@ lspconfig.clangd.setup({
   on_attach = nvlsp.on_attach,
   capabilities = nvlsp.capabilities
 })
+lspconfig.qmlls.setup({
+  on_attach = nvlsp.on_attach,
+  capabilities = nvlsp.capabilities,
 
+  root_dir = lspconfig.util.root_pattern("shell.qml")
+})
 
 vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
 vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})

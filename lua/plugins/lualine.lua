@@ -4,9 +4,9 @@ return {
   'nvim-lualine/lualine.nvim',
   dependencies = { 'nvim-tree/nvim-web-devicons' },
   config = function()
-    require('lualine').setup({ -- <--- Corrected: `.` instead of `'`.` and added missing `(`
+    require('lualine').setup({
       options = {
-        theme = 'everforest'
+        theme = 'catppuccin'
       }
     })
   end
